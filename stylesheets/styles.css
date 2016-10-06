@@ -1,0 +1,80 @@
+/**
+ * @file
+ * Main SCSS file for mixtheme.
+ */
+/* Import Sass mixins, variables, Compass modules, Bourbon and Neat, etc. */
+/**
+ * @file
+ *
+ * Import and configure frameworks.
+ */
+/* line 4, ../../../libraries/sass/neat/grid/_box-sizing.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 9, ../../../libraries/sass/neat/grid/_box-sizing.scss */
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+/**
+ * @file
+ *
+ * Custom variables, mixins, and functions.
+ */
+/**
+ * @file
+ *
+ * Base styles. Mostly HTML elements.
+ */
+/* Layout rules */
+/* Component rules (called 'modules' in SMACSS) */
+/**
+ * @file
+ *
+ * Main components file. Loads all other components.
+ */
+/**
+ * @file
+ * Styles for the logo and navigation region.
+ */
+/* line 5, ../sass/components/_logo_and_navigation.scss */
+header[role="logo-and-navigation"] {
+  max-width: 125em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 20, ../../../libraries/sass/bourbon/addons/_clearfix.scss */
+header[role="logo-and-navigation"]::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 7, ../sass/components/_logo_and_navigation.scss */
+header[role="logo-and-navigation"] .region-logo {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+}
+/* line 89, ../../../libraries/sass/neat/grid/_span-columns.scss */
+header[role="logo-and-navigation"] .region-logo:last-child {
+  margin-right: 0;
+}
+/* line 10, ../sass/components/_logo_and_navigation.scss */
+header[role="logo-and-navigation"] .region-navigation {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 74.41059%;
+}
+/* line 89, ../../../libraries/sass/neat/grid/_span-columns.scss */
+header[role="logo-and-navigation"] .region-navigation:last-child {
+  margin-right: 0;
+}
+/* line 13, ../sass/components/_logo_and_navigation.scss */
+header[role="logo-and-navigation"] .region-navigation ul.menu li {
+  display: inline-block;
+  margin: 1em;
+}

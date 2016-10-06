@@ -1,0 +1,42 @@
+/**
+ * @file
+ *
+ * Import and configure frameworks.
+ */
+
+// Bourbon and Neat import and overrides.
+
+// Import variables and mixins to be used (Bourbon).
+// Note: this expects bourbon and net to be installed in the libraries/sass directory.
+// Change the parent directory if you install bouron and neat elsewhere.
+@import "../../../libraries/sass/bourbon/bourbon";
+@import "../../../libraries/sass/neat/neat-helpers";
+
+// Bourbon grid display. 
+$visual-grid:       false;
+$visual-grid-color: #EEEEEE;
+
+// Set to false if you'd like to remove the responsiveness.
+$responsive:    true;
+
+// Set total number of columns.
+$grid-columns:  12;
+
+// We set the max width of the page using the px to em function in Bourbon.
+// The first value is the pixel value of the width and the second is the base
+// font size of your theme.
+$font-size:     16px;
+$max-width-px:  2000px;
+$max-width:     em($max-width-px, $font-size);
+
+// Define breakpoints.
+// The last argument is the number of columns.
+$mobile:   new-breakpoint(min-width em(320px, $font-size) $grid-columns);
+$narrow:   new-breakpoint(min-width em(560px, $font-size) $grid-columns);
+$wide:     new-breakpoint(min-width em(851px, $font-size) $grid-columns);
+$x-wide:   new-breakpoint(min-width em(960px, $font-size) $grid-columns);
+
+// Import grid to be used (Bourbon Neat).
+// We load this after we provide our overrides.
+@import "../../../libraries/sass/neat/neat";
+

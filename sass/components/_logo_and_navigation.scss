@@ -1,0 +1,19 @@
+/**
+ * @file
+ * Styles for the logo and navigation region.
+ */
+header[role="logo-and-navigation"] {
+  @include outer-container;
+  .region-logo {
+    @include span-columns(3);
+  }
+  .region-navigation {
+    @include span-columns(9);
+    ul.menu {
+      li {
+        display: inline-block;
+        margin: 1em;
+      }
+    }
+  }
+}

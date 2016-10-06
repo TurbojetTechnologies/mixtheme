@@ -1,0 +1,20 @@
+name: Mixtheme
+type: theme
+description: 'A base theme from the Mixology suite, using Bourbon and Neat.'
+core: 8.x
+base theme: classy
+package: Mixology
+regions:
+  logo: 'Site Logo'
+  navigation: 'Navigation'
+  header: 'Header'
+  help: 'Help'
+  breadcrumb: 'Breadcrumb'
+  highlighted: 'Highlighted'
+  sidebar_first: 'Sidebar First'
+  content: 'Content'
+  sidebar_second: 'Sidebar Second'
+  footer: 'Footer'
+
+libraries:
+  - 'mixtheme/global-styling'
