@@ -5,7 +5,7 @@ core: 8.x
 base theme: classy
 package: Mixology
 regions:
-  logo: 'Site Logo'
+  top: 'Top'
   navigation: 'Navigation'
   header: 'Header'
   help: 'Help'

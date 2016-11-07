@@ -7,8 +7,12 @@ for styling.
 
 **Developer Info**
 
-By default, the sass code expects the bourbon and neat
-libraries to be installed in `[drupal root]/libraries/sass`.
+By default, the sass code expects:
+ 1. This theme is installed in
+ `[drupal-root]/themes/contrib/mixtheme`.
+ 2. The bourbon and neat
+libraries are installed in `[drupal-root]/libraries/sass`.
+
 If you need to change the installation location,
 update the `_init.scss` file.
 

@@ -42,11 +42,11 @@
  */
 #}
 <div class="layout-container">
-  <header role="logo-and-navigation">
-    {{ page.logo }}
-    {{ page.navigation }}
+  <header role="top" class="header--top">
+    {{ page.top }}
   </header>
-  <header role="banner">
+  {{ page.navigation }}
+  <header role="banner" class="header--banner">
     {{ page.header }}
   </header>
   {{ page.breadcrumb }}
