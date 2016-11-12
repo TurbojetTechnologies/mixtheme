@@ -6,8 +6,8 @@ base theme: classy
 package: Mixology
 regions:
   top: 'Top'
-  navigation: 'Navigation'
   header: 'Header'
+  subheader: 'Subheader'
   help: 'Help'
   breadcrumb: 'Breadcrumb'
   highlighted: 'Highlighted'

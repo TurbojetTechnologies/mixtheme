@@ -1,0 +1,14 @@
+/**
+ * Layout for mixology base theme.
+ */
+.layout-container {
+  &> .wrapper {
+    text-align: center;
+    & > header, & > .content-area, & > footer {
+      max-width: 1800px;
+      padding: 0 2em;
+      text-align: left;
+      margin: 0 auto;
+    }
+  }
+}

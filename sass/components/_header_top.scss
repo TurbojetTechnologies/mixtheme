@@ -1,0 +1,34 @@
+/**
+ * @file
+ * Styles for the logo and navigation region.
+ */
+.wrapper--header--top {
+  background-color: #c0c0c0;
+  .header--top {
+    .region-top {
+      @include display(flex);
+      @include flex-direction(row);
+      @include align-items(center);
+      padding: 1.5em 0;
+      .block-system-branding-block {
+        @include display(flex);
+        @include flex-direction(row);
+        @include align-items(center);
+        @include flex-grow(2);
+        .site-name {
+          margin-left: 1em;
+          font-size: 1.5em;
+          font-weight: bold;
+          a {
+            text-decoration: none;
+            color: inherit;
+          }
+        }
+      }
+      .block-search {
+        @include flex-grow(1);
+        text-align: right;
+      }
+    }
+  }
+}

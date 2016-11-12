@@ -29,6 +29,21 @@ html {
  * Base styles. Mostly HTML elements.
  */
 /* Layout rules */
+/**
+ * Layout for mixology base theme.
+ */
+/* line 5, ../sass/layout/_layout.scss */
+.layout-container > .wrapper {
+  text-align: center;
+}
+/* line 7, ../sass/layout/_layout.scss */
+.layout-container > .wrapper > header, .layout-container > .wrapper > .content-area, .layout-container > .wrapper > footer {
+  max-width: 1800px;
+  padding: 0 2em;
+  text-align: left;
+  margin: 0 auto;
+}
+
 /* Component rules (called 'modules' in SMACSS) */
 /**
  * @file
@@ -39,42 +54,89 @@ html {
  * @file
  * Styles for the logo and navigation region.
  */
-/* line 5, ../sass/components/_logo_and_navigation.scss */
-header[role="logo-and-navigation"] {
-  max-width: 125em;
-  margin-left: auto;
-  margin-right: auto;
+/* line 5, ../sass/components/_header_top.scss */
+.wrapper--header--top {
+  background-color: #c0c0c0;
 }
-/* line 20, ../../../../libraries/sass/bourbon/addons/_clearfix.scss */
-header[role="logo-and-navigation"]::after {
-  clear: both;
-  content: "";
-  display: table;
+/* line 8, ../sass/components/_header_top.scss */
+.wrapper--header--top .header--top .region-top {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+  padding: 1.5em 0;
 }
-/* line 7, ../sass/components/_logo_and_navigation.scss */
-header[role="logo-and-navigation"] .region-logo {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 23.23176%;
+/* line 13, ../sass/components/_header_top.scss */
+.wrapper--header--top .header--top .region-top .block-system-branding-block {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-flex-grow: 2;
+  -moz-flex-grow: 2;
+  flex-grow: 2;
+  -ms-flex-positive: 2;
 }
-/* line 89, ../../../../libraries/sass/neat/grid/_span-columns.scss */
-header[role="logo-and-navigation"] .region-logo:last-child {
-  margin-right: 0;
+/* line 18, ../sass/components/_header_top.scss */
+.wrapper--header--top .header--top .region-top .block-system-branding-block .site-name {
+  margin-left: 1em;
+  font-size: 1.5em;
+  font-weight: bold;
 }
-/* line 10, ../sass/components/_logo_and_navigation.scss */
-header[role="logo-and-navigation"] .region-navigation {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 74.41059%;
+/* line 22, ../sass/components/_header_top.scss */
+.wrapper--header--top .header--top .region-top .block-system-branding-block .site-name a {
+  text-decoration: none;
+  color: inherit;
 }
-/* line 89, ../../../../libraries/sass/neat/grid/_span-columns.scss */
-header[role="logo-and-navigation"] .region-navigation:last-child {
-  margin-right: 0;
-}
-/* line 13, ../sass/components/_logo_and_navigation.scss */
-header[role="logo-and-navigation"] .region-navigation ul.menu li {
-  display: inline-block;
-  margin: 1em;
+/* line 28, ../sass/components/_header_top.scss */
+.wrapper--header--top .header--top .region-top .block-search {
+  -webkit-flex-grow: 1;
+  -moz-flex-grow: 1;
+  flex-grow: 1;
+  -ms-flex-positive: 1;
+  text-align: right;
 }
