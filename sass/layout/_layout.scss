@@ -2,6 +2,9 @@
  * Layout for mixology base theme.
  */
 .layout-container {
+  @include display(flex);
+  @include flex-direction(column);
+  min-height: 100vh;
   &> .wrapper {
     text-align: center;
     & > header, & > .content-area, & > footer {
@@ -10,5 +13,8 @@
       text-align: left;
       margin: 0 auto;
     }
+  }
+  > .wrapper--content {
+    @include flex-grow(2);
   }
 }
