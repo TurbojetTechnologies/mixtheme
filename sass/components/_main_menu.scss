@@ -1,0 +1,18 @@
+/**
+ * Styles for main menu.
+ */
+.wrapper--header--main {
+  background-color: #e0e0e0;
+  .main-menu {
+    text-align: center;
+  }
+}
+#menu-toggle {
+  padding: 0.5em;
+  border: 1px solid #555;
+  display: inline-block;
+  margin: 0.25em;
+  @include media($breakpoint-desktop-narrow) {
+    display: none;
+  }
+}

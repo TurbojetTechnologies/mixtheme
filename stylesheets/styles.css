@@ -175,3 +175,29 @@ html {
   -ms-flex-positive: 1;
   text-align: right;
 }
+
+/**
+ * Styles for main menu.
+ */
+/* line 4, ../sass/components/_main_menu.scss */
+.wrapper--header--main {
+  background-color: #e0e0e0;
+}
+/* line 6, ../sass/components/_main_menu.scss */
+.wrapper--header--main .main-menu {
+  text-align: center;
+}
+
+/* line 10, ../sass/components/_main_menu.scss */
+#menu-toggle {
+  padding: 0.5em;
+  border: 1px solid #555;
+  display: inline-block;
+  margin: 0.25em;
+}
+@media screen and (min-width: 800px) {
+  /* line 10, ../sass/components/_main_menu.scss */
+  #menu-toggle {
+    display: none;
+  }
+}
