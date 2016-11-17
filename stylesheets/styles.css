@@ -87,6 +87,50 @@ html {
 }
 
 /**
+ * Styles for the search form.
+ */
+/* line 4, ../sass/components/_form_search.scss */
+.search-block-form {
+  position: relative;
+}
+/* line 6, ../sass/components/_form_search.scss */
+.search-block-form .form-search-main {
+  display: none;
+  padding: 1em;
+  width: 18em;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #969696;
+  z-index: 10;
+}
+/* line 15, ../sass/components/_form_search.scss */
+.search-block-form .form-search-main form {
+  display: inline-block;
+  padding-top: 0.5em;
+}
+/* line 19, ../sass/components/_form_search.scss */
+.search-block-form .form-search-main .form-search-main-close {
+  display: inline-block;
+  position: relative;
+  top: -0.5em;
+  right: -0.5em;
+}
+/* line 24, ../sass/components/_form_search.scss */
+.search-block-form .form-search-main .form-search-main-close:hover {
+  cursor: pointer;
+}
+/* line 29, ../sass/components/_form_search.scss */
+.search-block-form .icon-search {
+  width: 2.5em;
+  height: 2.5em;
+}
+/* line 32, ../sass/components/_form_search.scss */
+.search-block-form .icon-search:hover {
+  cursor: pointer;
+}
+
+/**
  * Styles for the header-top region.
  */
 /* line 4, ../sass/components/_header_top.scss */
@@ -184,20 +228,158 @@ html {
   background-color: #e0e0e0;
 }
 /* line 6, ../sass/components/_main_menu.scss */
+.wrapper--header--main header.header--main {
+  padding-left: 0;
+  padding-right: 0;
+}
+@media screen and (min-width: 800px) {
+  /* line 6, ../sass/components/_main_menu.scss */
+  .wrapper--header--main header.header--main {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+}
+/* line 14, ../sass/components/_main_menu.scss */
 .wrapper--header--main .main-menu {
   text-align: center;
 }
-
-/* line 10, ../sass/components/_main_menu.scss */
-#menu-toggle {
-  padding: 0.5em;
-  border: 1px solid #555;
-  display: inline-block;
-  margin: 0.25em;
+/* line 16, ../sass/components/_main_menu.scss */
+.wrapper--header--main .main-menu > .narrow {
+  position: relative;
 }
 @media screen and (min-width: 800px) {
-  /* line 10, ../sass/components/_main_menu.scss */
+  /* line 16, ../sass/components/_main_menu.scss */
+  .wrapper--header--main .main-menu > .narrow {
+    display: none;
+  }
+}
+/* line 21, ../sass/components/_main_menu.scss */
+.wrapper--header--main .main-menu > .narrow > ul.menu {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  background-color: #e0e0e0;
+  width: 100%;
+}
+/* line 27, ../sass/components/_main_menu.scss */
+.wrapper--header--main .main-menu > .narrow > ul.menu > li.menu-item {
+  border-bottom: 1px solid #c0c0c0;
+}
+/* line 29, ../sass/components/_main_menu.scss */
+.wrapper--header--main .main-menu > .narrow > ul.menu > li.menu-item:first-child {
+  border-top: 1px solid #c0c0c0;
+}
+/* line 35, ../sass/components/_main_menu.scss */
+.wrapper--header--main .main-menu > .wide {
+  display: none;
+}
+@media screen and (min-width: 800px) {
+  /* line 35, ../sass/components/_main_menu.scss */
+  .wrapper--header--main .main-menu > .wide {
+    display: block;
+  }
+  /* line 39, ../sass/components/_main_menu.scss */
+  .wrapper--header--main .main-menu > .wide > ul.menu {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: flex-start;
+    -moz-align-content: flex-start;
+    align-content: flex-start;
+    -ms-flex-line-pack: start;
+  }
+}
+/* line 46, ../sass/components/_main_menu.scss */
+.wrapper--header--main .main-menu ul.menu {
+  padding: 0;
+  margin: 0;
+}
+/* line 50, ../sass/components/_main_menu.scss */
+.wrapper--header--main .main-menu ul.menu > li.menu-item a {
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  padding: 1em;
+}
+/* line 55, ../sass/components/_main_menu.scss */
+.wrapper--header--main .main-menu ul.menu > li.menu-item a:visited {
+  color: inherit;
+}
+/* line 58, ../sass/components/_main_menu.scss */
+.wrapper--header--main .main-menu ul.menu > li.menu-item a:hover {
+  color: #505050;
+}
+
+/* line 66, ../sass/components/_main_menu.scss */
+#menu-toggle {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-content: flex-start;
+  -moz-align-content: flex-start;
+  align-content: flex-start;
+  -ms-flex-line-pack: start;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: distribute;
+  -moz-box-pack: distribute;
+  box-pack: distribute;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  -o-justify-content: space-around;
+  justify-content: space-around;
+  -ms-flex-pack: distribute;
+  padding: 0.1em;
+  border: 1px solid #555;
+  margin: 0.25em auto;
+  width: 6em;
+}
+@media screen and (min-width: 800px) {
+  /* line 66, ../sass/components/_main_menu.scss */
   #menu-toggle {
     display: none;
   }
+}
+/* line 79, ../sass/components/_main_menu.scss */
+#menu-toggle:hover {
+  cursor: pointer;
+}
+
+/* line 83, ../sass/components/_main_menu.scss */
+svg.icon {
+  width: 24px;
+  height: 24px;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
 }

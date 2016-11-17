@@ -1,0 +1,22 @@
+<!-- SVG icon definitions -->
+<svg style="display: none">
+  <defs>
+    <g id="icon-menu">
+      <title>Menu</title>
+      <rect fill="#000000" stroke="#000" x="5" y="70" width="90" height="16" id="svg_1" rx="10"/>
+      <rect fill="#000000" stroke="#000" x="5" y="10" width="90" height="16" id="svg_2" rx="10"/>
+      <rect fill="#000000" stroke="#000" x="5" y="40" width="90" height="16" id="svg_3" rx="10"/>
+    </g>
+    <g id="icon-search">
+      <title>Search</title>
+      <ellipse fill="#505050" stroke="#505050" stroke-opacity="null" cx="50" cy="50" id="svg_5" rx="45" ry="45"/>
+      <ellipse fill="none" cx="39.5" cy="39" id="svg_6" rx="16" ry="16" stroke-width="8" stroke="#ffffff"/>
+      <line fill="none" stroke-width="8" x1="51.500001" y1="50" x2="74.151877" y2="72.651876" id="svg_7" stroke-linejoin="null" stroke-linecap="null" stroke="#ffffff"/>
+    </g>
+    <g id="icon-close">
+      <title>Close</title>
+      <rect transform="rotate(-45 49.99999999999998,52.49999999999998) " rx="8" id="svg_1" height="13" width="110" y="46" x="-5" stroke-width="1.5" stroke="#000" fill="#000000"/>
+      <rect transform="rotate(45 50.00000000000001,51.5) " rx="8" id="svg_2" height="13" width="110" y="45" x="-5" stroke-width="1.5" stroke="#000" fill="#000000"/>
+    </g>
+  </defs>
+</svg>

@@ -1,0 +1,16 @@
+<?php
+/**
+ * @file
+ * Main theme file for the Mixology theme.
+ */
+
+/**
+ * Implements hook_preprocess_html.
+ */
+function mixtheme_preprocess_html(&$variables) {
+  // Inject svg icon definitions.
+  $defs = file_get_contents(drupal_get_path('theme', 'mixtheme') . '/svg/svg-defs.svg');
+  if (!empty($defs)) {
+    $variables['svg_defs'] = $defs;
+  }
+}

@@ -18,3 +18,5 @@ regions:
 
 libraries:
   - 'mixtheme/global-styling'
+  - 'mixtheme/menu-toggle'
+  - 'mixtheme/search'
