@@ -82,5 +82,12 @@
       </footer>
     </div>
   {% endif %}
+  {% if page.bottom %}
+    <div class="wrapper wrapper--bottom">
+      <footer>
+        {{ page.bottom }}
+      </footer>
+    </div>
+  {% endif %}
 
 </div>{# /.layout-container #}

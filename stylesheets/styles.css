@@ -79,11 +79,19 @@ html {
  * Main components file. Loads all other components.
  */
 /**
+ * Styles for the bottom region.
+ */
+/* line 4, ../sass/components/_bottom.scss */
+.wrapper--bottom {
+  background-color: #c0c0c0;
+}
+
+/**
  * Styles for the footer region.
  */
 /* line 4, ../sass/components/_footer.scss */
 .wrapper--footer {
-  background-color: #c0c0c0;
+  background-color: #a0a0a0;
 }
 
 /**
