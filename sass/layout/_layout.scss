@@ -9,9 +9,13 @@
     text-align: center;
     & > header, & > .content-area, & > footer {
       max-width: 1800px;
-      padding: 0 2em;
+      padding: 0 1em;
       text-align: left;
       margin: 0 auto;
+      @include media($breakpoint-mobile-wide) {
+        padding-left: 2em;
+        padding-right: 2em;
+      }
     }
   }
   > .wrapper--content {

@@ -7,9 +7,11 @@ menu-toggle:
     js/menu_toggle.js: {}
   dependencies:
     - core/jquery
+    - core/drupal
 search:
   js:
     js/search.js: {}
   dependencies:
     - core/jquery
     - core/jquery.ui.effects.slide
+    - core/drupal

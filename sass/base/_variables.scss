@@ -4,4 +4,5 @@
  * Custom variables, mixins, and functions.
  */
 // Breakpoints
-$breakpoint-desktop-narrow: new-breakpoint(min-width 800px);
+$breakpoint-mobile-wide: new-breakpoint(min-width 30rem);
+$breakpoint-desktop-narrow: new-breakpoint(min-width 50rem);
