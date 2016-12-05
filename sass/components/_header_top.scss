@@ -13,7 +13,8 @@
         @include display(flex);
         @include flex-direction(row);
         @include align-items(center);
-        @include flex-grow(2);
+        @include flex-grow(8);
+        @include order(1);
         .site-name {
           margin-left: 1em;
           font-size: 1.5em;
@@ -24,8 +25,15 @@
           }
         }
       }
+      .menu--main {
+        @include order(99);
+        @include media($breakpoint-desktop-narrow) {
+          @include order(2);
+        }
+      }
       .block-search {
-        @include flex-grow(1);
+        @include flex-grow(0);
+        @include order(3);
         text-align: right;
       }
     }
