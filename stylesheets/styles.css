@@ -121,37 +121,46 @@ svg.icon {
 .search-block-form .form-search-main {
   display: none;
   padding: 1em;
-  width: 18em;
-  position: absolute;
-  top: 0;
-  right: 0;
+  min-width: 18em;
+  position: fixed;
+  top: 1em;
+  right: 1em;
   background-color: #969696;
   z-index: 10;
 }
-/* line 15, ../sass/components/_form_search.scss */
+@media screen and (min-width: 50rem) {
+  /* line 6, ../sass/components/_form_search.scss */
+  .search-block-form .form-search-main {
+    width: 18em;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+/* line 21, ../sass/components/_form_search.scss */
 .search-block-form .form-search-main form {
   display: inline-block;
   padding-top: 0.5em;
 }
-/* line 19, ../sass/components/_form_search.scss */
+/* line 25, ../sass/components/_form_search.scss */
 .search-block-form .form-search-main .form-search-main-close {
   display: inline-block;
   position: relative;
   top: -0.5em;
   right: -0.5em;
 }
-/* line 24, ../sass/components/_form_search.scss */
+/* line 30, ../sass/components/_form_search.scss */
 .search-block-form .form-search-main .form-search-main-close:hover {
   cursor: pointer;
 }
-/* line 29, ../sass/components/_form_search.scss */
+/* line 35, ../sass/components/_form_search.scss */
 .search-block-form .icon-search {
   width: 3em;
   height: 2.5em;
   padding-left: 0.5em;
   padding-right: 0.5em;
 }
-/* line 34, ../sass/components/_form_search.scss */
+/* line 40, ../sass/components/_form_search.scss */
 .search-block-form .icon-search:hover {
   cursor: pointer;
 }
