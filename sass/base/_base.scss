@@ -3,3 +3,10 @@
  *
  * Base styles. Mostly HTML elements.
  */
+svg.icon {
+  width: 24px;
+  height: 24px;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}

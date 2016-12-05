@@ -1,0 +1,14 @@
+/**
+ * Styles for main header.
+ */
+.wrapper--header--main {
+  background-color: #e0e0e0;
+  header.header--main {
+    padding-left: 0;
+    padding-right: 0;
+    @include media($breakpoint-desktop-narrow) {
+      padding-left: 2em;
+      padding-right: 2em;
+    }
+  }
+}

@@ -1,68 +1,58 @@
 /**
  * Styles for main menu.
  */
-.wrapper--header--main {
-  background-color: #e0e0e0;
-  header.header--main {
-    padding-left: 0;
-    padding-right: 0;
+.main-menu {
+  text-align: center;
+  > .narrow {
     @include media($breakpoint-desktop-narrow) {
-      padding-left: 2em;
-      padding-right: 2em;
+      display: none;
+    }
+    position: relative;
+    &> ul.menu {
+      display: none;
+      position: absolute;
+      z-index: 10;
+      background-color: #e0e0e0;
+      width: 100%;
+      &> li.menu-item {
+        border-bottom: 1px solid #c0c0c0;
+        &:first-child {
+          border-top: 1px solid #c0c0c0;
+        }
+      }
     }
   }
-  .main-menu {
-    text-align: center;
-    > .narrow {
-      @include media($breakpoint-desktop-narrow) {
-        display: none;
-      }
-      position: relative;
+  > .wide {
+    display: none;
+    @include media($breakpoint-desktop-narrow) {
+      display: block;
       &> ul.menu {
-        display: none;
-        position: absolute;
-        z-index: 10;
-        background-color: #e0e0e0;
-        width: 100%;
-        &> li.menu-item {
-          border-bottom: 1px solid #c0c0c0;
-          &:first-child {
-            border-top: 1px solid #c0c0c0;
-          }
-        }
+        @include display(flex);
+        @include flex-wrap(wrap);
+        @include align-content(flex-start);
       }
     }
-    > .wide {
-      display: none;
-      @include media($breakpoint-desktop-narrow) {
-        display: block;
-        &> ul.menu {
-          @include display(flex);
-          @include flex-wrap(wrap);
-          @include align-content(flex-start);
+  }
+  ul.menu {
+    padding: 0;
+    margin: 0;
+    &> li.menu-item {
+      a {
+        color: black;
+        text-decoration: none;
+        display: inline-block;
+        padding: 1em;
+        &:visited {
+          color: inherit;
         }
-      }
-    }
-    ul.menu {
-      padding: 0;
-      margin: 0;
-      &> li.menu-item {
-        a {
-          color: black;
-          text-decoration: none;
-          display: inline-block;
-          padding: 1em;
-          &:visited {
-            color: inherit;
-          }
-          &:hover {
-            color: #505050;
-          }
+        &:hover {
+          color: #505050;
         }
       }
     }
   }
 }
+
 #menu-toggle {
   @include display(flex);
   @include flex-wrap(wrap);
@@ -79,11 +69,4 @@
   &:hover {
     cursor: pointer;
   }
-}
-svg.icon {
-  width: 24px;
-  height: 24px;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
 }
