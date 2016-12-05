@@ -7,10 +7,10 @@
     @include media($breakpoint-desktop-narrow) {
       display: none;
     }
-    position: relative;
     &> ul.menu {
       display: none;
       position: absolute;
+      right: 0;
       z-index: 10;
       background-color: #e0e0e0;
       width: 100%;

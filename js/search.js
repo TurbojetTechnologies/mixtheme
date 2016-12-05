@@ -7,7 +7,11 @@
     attach : function(context, settings) {
       if (context == document) {
         $('.form-search-expander').click(function(){
-          $(this).siblings('.form-search-main').show(200);
+          var width = $('.header--top').width();
+          if (width > 400) {
+            width = 400;
+          }
+          $(this).siblings('.form-search-main').css('width', width).css('top', '40px').show(200);
         });
         $(window).scroll(function(){
           $('.form-search-expander').siblings('.form-search-main').hide();

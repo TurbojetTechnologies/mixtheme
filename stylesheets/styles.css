@@ -318,20 +318,17 @@ svg.icon {
 .main-menu {
   text-align: center;
 }
-/* line 6, ../sass/components/_main_menu.scss */
-.main-menu > .narrow {
-  position: relative;
-}
 @media screen and (min-width: 50rem) {
   /* line 6, ../sass/components/_main_menu.scss */
   .main-menu > .narrow {
     display: none;
   }
 }
-/* line 11, ../sass/components/_main_menu.scss */
+/* line 10, ../sass/components/_main_menu.scss */
 .main-menu > .narrow > ul.menu {
   display: none;
   position: absolute;
+  right: 0;
   z-index: 10;
   background-color: #e0e0e0;
   width: 100%;
